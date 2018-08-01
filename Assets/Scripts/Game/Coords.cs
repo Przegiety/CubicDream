@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 
 namespace Game {
-    struct Coords {
+    [Serializable]
+    public struct Coords {
         public int x, y, z;
 
         public Coords(int x, int y, int z) {

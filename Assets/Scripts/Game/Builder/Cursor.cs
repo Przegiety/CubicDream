@@ -4,6 +4,6 @@ using UnityEngine;
 
 namespace Game.BUilder {
     public class Cursor : MonoBehaviour {
-
+        public Coords coords;
     }
 }
