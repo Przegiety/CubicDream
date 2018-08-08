@@ -1,0 +1,13 @@
+﻿Player:
+    Fields:
+        position : coords
+
+
+
+Block:
+    Fields:
+        position : coords
+        blocksBottom : bool
+
+To Consider
+    making a superclass that has a field position : coords
