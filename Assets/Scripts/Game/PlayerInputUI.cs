@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 namespace Game {
-    public class PlayerInputUI : IPlayerInput {
+    public class PlayerInputUI : MonoBehaviour, IPlayerInput {
         public bool Up => _up;
         public bool Down => _down;
         public bool Left => _left;
