@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 namespace Game {
     [Serializable]
@@ -32,7 +33,12 @@ namespace Game {
             hashCode = hashCode * -1521134295 + z.GetHashCode();
             return hashCode;
         }
-        //TODO: methods
 
+        public static Coords operator +(Coords c1, Coords c2) {
+            return new Coords(c1.x + c2.x, c1.y + c2.y, c1.z + c2.z);
+        }
+        public static explicit operator Vector3(Coords c) {
+            return new Vector3(c.x, c.y, c.z);
+        }
     }
 }
